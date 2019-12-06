@@ -73,13 +73,13 @@
 
     <instantiate from="root/res-buildApi22/menu/drawer.xml.ftl"
                    to="${escapeXmlAttribute(resOut)}/menu/${drawerMenu}.xml" />
-
+<#if isSplash>
     <copy from="root/res-buildApi22/layout/activity_splash.xml"
         to="${escapeXmlAttribute(resOut)}/layout/activity_splash.xml" />
 
     <copy from="root/src-buildApi22/app_package/SplashActivity.kt"
         to="${escapeXmlAttribute(srcOut)}/SplashActivity.kt" />        
-
+</#if>
     <instantiate from="root/res-buildApi22/layout/navigation_view.xml.ftl"
                    to="${escapeXmlAttribute(resOut)}/layout/${layoutName}.xml" />
     <instantiate from="root/res-buildApi22/layout/navigation_header.xml.ftl"

@@ -167,6 +167,12 @@
         help="The route to use in the Instant App route for this activity"/>
 
     <parameter
+        id="isSplash"
+        name="InstallSplash"
+        type="boolean"
+        default="false" />
+
+    <parameter
         id="isCalligraphy"
         name="InstallCalligraphy"
         type="boolean"
